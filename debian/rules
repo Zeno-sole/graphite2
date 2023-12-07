@@ -8,7 +8,7 @@ include /usr/share/dpkg/architecture.mk
 
 override_dh_auto_build-indep:
 	@echo "Building docs"
-	dh_auto_build --no-parallel -- docs
+	dh_auto_build --no-parallel
 
 override_dh_auto_install-arch:
 	dh_auto_install -a
